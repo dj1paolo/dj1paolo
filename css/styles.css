@@ -97,3 +97,13 @@ p{line-height:1.7;color:#d6d7dc}
 
 /* footer */
 .site-footer{padding:28px 18px;border-top:1px solid rgba(255,255,255,.08);text-align:center;color:var(--muted)}
+
+.calendar-embed-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
