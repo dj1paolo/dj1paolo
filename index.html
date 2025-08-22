@@ -119,7 +119,7 @@
 
      <section id="events" class="section">
   <div class="container">
-    <h2>Upcoming Events</h2>
+    <h2>Residency</h2>
     <ul class="events">
       <li><strong>Every Friday</strong> — Ninja Karaoke, Chinatown, Las Vegas (8 PM – 1 AM)</li>
     </ul>
@@ -139,21 +139,17 @@
 
       </div>
       <p class="small">Or use this form:</p>
-      <form id="contact-form" action="https://formspree.io/f/mzzvnzoy" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="_replyto" placeholder="Your Email" required>
-  <textarea name="message" rows="5" placeholder="Tell me about your event…" required></textarea>
-
-  <!-- Optional niceties -->
-  <input type="hidden" name="_subject" value="New inquiry from dj1paolo.com">
-  <input type="hidden" name="_template" value="table">
-  <!-- If you want to redirect to a thank-you anchor:
-  <input type="hidden" name="_redirect" value="https://dj1paolo.github.io/dj1paolo/#thanks">
-  -->
-
-  <button type="submit" class="btn btn-primary">Send</button>
-  <p id="form-msg" style="margin-top:10px; opacity:.8;"></p>
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mzzvnzoy" method="POST">
+  <div class="row">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+  </div>
 </form>
+
+<textarea name="message" rows="5" placeholder="Tell me about your event…" required></textarea>
+<button type="submit" class="btn-primary">Send</button>
+
+
 
     </div>
   </section>
