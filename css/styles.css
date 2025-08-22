@@ -88,12 +88,7 @@ p{line-height:1.7;color:#d6d7dc}
 .contact-card{
   border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px;margin:10px 0 18px;background:#0f0f17
 }
-.contact-form{display:grid;gap:10px;max-width:560px}
-.contact-form input,.contact-form textarea{
-  background:#0f0f17;border:1px solid rgba(255,255,255,.12);border-radius:12px;
-  padding:12px 14px;color:var(--fg)
-}
-.contact-form button{justify-self:start}
+
 
 /* footer */
 .site-footer{padding:28px 18px;border-top:1px solid rgba(255,255,255,.08);text-align:center;color:var(--muted)}
@@ -121,13 +116,13 @@ p{line-height:1.7;color:#d6d7dc}
   max-width: 720px;
 }
 
-.contact-form .row {
+/* First row: name + email */
+.contact-form .row.two {
   display: grid;
   gap: 12px;
 }
-
 @media (min-width: 640px) {
-  .contact-form .row { grid-template-columns: 1fr 1fr; }
+  .contact-form .row.two { grid-template-columns: 1fr 1fr; }
 }
 
 .contact-form input,
@@ -139,13 +134,18 @@ p{line-height:1.7;color:#d6d7dc}
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.04);
   color: #fff;
+  font-size: 14px;
   outline: none;
 }
 
-.contact-form textarea { resize: vertical; min-height: 140px; }
+/* Make textarea and button take the full row visually */
+.contact-form textarea,
+.contact-form .btn-primary {
+  grid-column: 1 / -1;
+}
 
 .btn-primary {
-  align-self: start;
+  justify-self: start;
   padding: 10px 18px;
   border: 0;
   border-radius: 12px;
@@ -154,7 +154,6 @@ p{line-height:1.7;color:#d6d7dc}
   font-weight: 600;
   cursor: pointer;
 }
-
 .btn-primary:hover { filter: brightness(1.08); }
 
 .form-msg { opacity: .8; margin: 4px 0 0; font-size: .95rem; }
