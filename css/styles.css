@@ -176,3 +176,13 @@ p{line-height:1.7;color:#d6d7dc}
   margin: 0 auto 16px; /* center + a little space below */
   filter: drop-shadow(0 6px 24px rgba(0,0,0,.35)); /* subtle depth on dark bg */
 }
+
+.music-player {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  background: #111;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
