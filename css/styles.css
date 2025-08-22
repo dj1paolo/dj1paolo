@@ -157,3 +157,22 @@ p{line-height:1.7;color:#d6d7dc}
 .btn-primary:hover { filter: brightness(1.08); }
 
 .form-msg { opacity: .8; margin: 4px 0 0; font-size: .95rem; }
+
+
+/* Visually hidden but readable by screen readers (keeps SEO semantic H1) */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+/* Hero logo sizing */
+.hero-logo {
+  display: block;
+  width: clamp(180px, 32vw, 520px); /* responsive: min 180px, max 520px */
+  height: auto;
+  margin: 0 auto 16px; /* center + a little space below */
+  filter: drop-shadow(0 6px 24px rgba(0,0,0,.35)); /* subtle depth on dark bg */
+}
