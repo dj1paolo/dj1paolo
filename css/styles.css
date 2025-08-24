@@ -255,3 +255,9 @@ p{line-height:1.7;color:#d6d7dc}
     gap: 12px;
   }
 }
+
+.brand img.logo {
+  height: 40px;      /* adjust size */
+  width: auto;       /* keep proportions */
+  display: block;
+}
