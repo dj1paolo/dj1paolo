@@ -257,7 +257,7 @@ p{line-height:1.7;color:#d6d7dc}
 }
 
 .brand img.logo {
-  height: 40px;      /* adjust size */
+  height: 50px;      /* adjust size */
   width: auto;       /* keep proportions */
   display: block;
 }
