@@ -186,3 +186,24 @@ p{line-height:1.7;color:#d6d7dc}
   background: #111;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
+
+/* Instagram Reels grid */
+.ig-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px) {
+  .ig-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .ig-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Tidy up the Instagram embed look */
+.instagram-media {
+  width: 100% !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background: #000; /* optional: keeps a clean background while loading */
+}
