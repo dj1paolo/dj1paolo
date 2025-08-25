@@ -2,7 +2,7 @@
   --bg: #0b0b10;
   --fg: #f4f4f7;
   --muted: #b7b9c0;
-  --accent: #7c5cff; /* tweak this for different vibes */
+  --accent: #7c5cff; 
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial}
@@ -221,14 +221,14 @@ p{line-height:1.7;color:#d6d7dc}
     padding: 6px 2px;
   }
   .reel {
-    flex: 0 0 80vw;            /* card width */
-    scroll-snap-align: center; /* snap each video to center */
+    flex: 0 0 80vw;            
+    scroll-snap-align: center; 
   }
   .reel video {
     border-radius: 12px;
   }
 
-  /* optional: thin, subtle scrollbar */
+  
   .reels-grid::-webkit-scrollbar { height: 6px; }
   .reels-grid::-webkit-scrollbar-thumb { background: rgba(0,0,0,.25); border-radius: 8px; }
   .dark .reels-grid::-webkit-scrollbar-thumb { background: rgba(255,255,255,.25); }
